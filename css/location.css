@@ -1,0 +1,250 @@
+@import url(common.css);
+
+.sheader{
+	background:url(../image/lo.jpg) no-repeat center center;
+	height:500px;
+/*	width:100%;*/
+	background-size:cover; /*FullScreen*/
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-ms-background-size:cover;
+	-o-background-size:cover;
+	position:relative;
+	z-index:1000;
+}
+
+
+
+.header-content{
+	width:1200px;
+	height:100px;
+	margin:0 auto;
+/*	background:green;*/	
+	position:relative;
+
+
+}.logo{
+	position:absolute;
+	top:0px;
+	left:0;
+	float:left;
+	padding-top:15px;
+}
+
+.logo img{
+	width:150px;
+	height:70px;
+}
+
+
+/*탑메뉴*/
+.header-navi{
+	text-align:right;
+}
+.header-navi>.navi{display:inline-block;}
+.navi>li{
+	float:left;
+	position:relative;
+	width:175px;
+	height:50px;
+	padding-top:20px;
+/*	background:yellow;
+*/
+
+}
+.navi>li>a{
+	display:block;
+	font-size:20px;
+	letter-spacing:1px;
+	color:#000;	
+	line-height:50px;
+	padding:0 30px;
+	transition:all 0.5s;
+	font-weight:bold;
+/*	background:pink;*/
+}
+
+.navi>li .a{
+	position:absolute;
+	display:block;
+	width:0px;
+	border:2px solid #000;
+	opacity:0;
+	top:65px;
+	left:80px;
+	transition:all 0.5s;
+	z-index:10000;
+}
+.navi>li:hover .a{
+	width:75px;
+	border:2px solid #000;
+	opacity:1;
+}
+
+.navi>li .b{
+	position:absolute;
+	display:block;
+	width:0px;
+	border:2px solid #000;
+	opacity:0;
+	top:65px;
+	left:48px;
+	transition:all 0.5s;
+	z-index:10000;
+}
+.navi>li:hover .b{
+	width:110px;
+	border:2px solid #000;
+	opacity:1;
+}
+
+.navi>li .c{
+	position:absolute;
+	display:block;
+	width:0px;
+	border:2px solid #000;
+	opacity:0;
+	top:65px;
+	left:30px;
+	transition:all 0.5s;
+	z-index:10000;
+}
+.navi>li:hover .c{
+	width:145px;
+	border:2px solid #000;
+	opacity:1;
+}
+
+.navi>li .d{
+	position:absolute;
+	display:block;
+	width:0px;
+	border:2px solid #000;
+	opacity:0;
+	top:65px;
+	left:60px;
+	transition:all 0.5s;
+	z-index:10000;
+}
+.navi>li:hover .d{
+	width:95px;
+	border:2px solid #000;
+	opacity:1;
+}
+.navi>li ul{
+	display:none;   /*서브메뉴 감추기->jQuery에서 보이게 함*/
+	
+	position:absolute;
+}
+.navi>li ul li{
+	float:left;
+	padding-top:7px;
+}
+.navi>li ul li a{
+	color:#000;
+	font-size:17px;
+	font-weight:bold;
+	padding:7px 20px;
+}
+.navi>li ul li:hover a{
+	background:#b30000;
+	color:#fff;}
+
+/*서브메뉴 가로폭,나오는위치값-<부모영역을 벗어나서 위치를 잡기 위함*/
+.navi>li>ul{left:64px;width:421px;}
+/*--------------------------------------컨텐츠--------------*/
+
+section{
+	width:100%;
+	background:#0d0d0d;
+	color:#fff;
+}
+
+.drive-in{
+	width:1300px;
+	height:1600px;
+	margin:0 auto;
+
+}
+
+.drive-in .tsmenu{
+	float:right;
+	padding-top:5px;
+}
+
+.drive-in h2{
+	text-align:center;
+	font-size:40px;
+	padding:20px 0;
+	padding-left:180px;
+}
+.store{margin-left:50px;}
+
+.store1{
+	margin-bottom:30px;
+}
+.store1 img{
+	width:500px;
+	height:400px;
+	margin-left:100px;
+}
+
+.store1 iframe{
+	float:right;
+	margin-right:100px;
+}
+
+.store1 .drtt1{
+	font-size:20px;
+	padding:10px 0;
+	font-weight: bold;
+	padding-left:100px;
+
+}
+
+
+/*푸터*/
+footer{
+	width:100%;
+	height:200px;
+	background:#f2f2f2;
+}
+.footer-in{
+	width:1200px;
+	margin:0px auto;
+	text-align:center;
+}
+.footer1{ 
+	padding-top:30px;
+	
+}
+
+.footer1 ul{display:inline-block;}
+.footer1 ul li{
+	float:left;
+	padding-right:20px;
+}
+.footer1 ul li p{
+	cursor:pointer;
+	color:#737373;
+	font-size:13px;
+}
+.footer1 ul li a{
+	color:#737373;
+	font-size:13px;
+}
+.footer1 ul li:hover p{color:#000;}
+.footer1 ul li:hover a{color:#000;}
+
+.footer2{
+	color:#1a1a1a;
+	line-height:100px;
+	font-size:15px;
+	font-style:none;
+}
+
+address{
+	font-style:italic;
+	font-size:16px;
+	color:#1a1a1a;
+}

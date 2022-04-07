@@ -1,0 +1,400 @@
+@import url(common.css);
+.top_btn{
+	position:fixed;
+    z-index:9999;
+    bottom:30px;
+    right:30px;
+    width:50px;
+    height:50px;
+/*    border-radius:50%; */  
+    background:#ff4d4d;
+    text-align:center;
+}
+.top_btn>a>i{  /*ICON FONT 설정*/
+    line-height:50px;
+    color:#fff;
+    font-size:40px;
+}
+.sheader{
+	background:url(../image/en1.jpg) no-repeat center center;
+	height:950px;
+/*	width:100%;*/
+	background-size:cover; /*FullScreen*/
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-ms-background-size:cover;
+	-o-background-size:cover;
+	position:relative;
+	z-index:1000;
+}
+
+.header-content{
+	width:1200px;
+	height:100px;
+	margin:0 auto;
+/*	background:green;*/	
+	position:relative;
+
+
+}.logo{
+	position:absolute;
+	top:0px;
+	left:0;
+	float:left;
+	padding-top:15px;
+}
+
+.logo img{
+	width:150px;
+	height:70px;
+}
+
+
+/*탑메뉴*/
+.header-navi{
+	text-align:right;
+
+}
+.header-navi>.navi{display:inline-block;}
+.navi>li{
+	float:left;
+	position:relative;
+	width:175px;
+	height:50px;
+	padding-top:20px;
+/*	background:yellow;
+*/
+
+}
+.navi>li>a{
+	display:block;
+	font-size:20px;
+	letter-spacing:1px;
+	color:#fff;	
+	line-height:50px;
+	padding:0 30px;
+	transition:all 0.5s;
+	font-weight:bold;
+/*	background:pink;*/
+}
+
+.navi>li .a{
+	position:absolute;
+	display:block;
+	width:0px;
+	border:2px solid #fff;
+	opacity:0;
+	top:65px;
+	left:80px;
+	transition:all 0.5s;
+	z-index:10000;
+}
+.navi>li:hover .a{
+	width:75px;
+	border:2px solid #fff;
+	opacity:1;
+}
+
+.navi>li .b{
+	position:absolute;
+	display:block;
+	width:0px;
+	border:2px solid #fff;
+	opacity:0;
+	top:65px;
+	left:48px;
+	transition:all 0.5s;
+	z-index:10000;
+}
+.navi>li:hover .b{
+	width:110px;
+	border:2px solid #fff;
+	opacity:1;
+}
+
+.navi>li .c{
+	position:absolute;
+	display:block;
+	width:0px;
+	border:2px solid #fff;
+	opacity:0;
+	top:65px;
+	left:30px;
+	transition:all 0.5s;
+	z-index:10000;
+}
+.navi>li:hover .c{
+	width:145px;
+	border:2px solid #Fff;
+	opacity:1;
+}
+
+.navi>li .d{
+	position:absolute;
+	display:block;
+	width:0px;
+	border:2px solid #Fff;
+	opacity:0;
+	top:65px;
+	left:60px;
+	transition:all 0.5s;
+	z-index:10000;
+}
+.navi>li:hover .d{
+	width:95px;
+	border:2px solid #Fff;
+	opacity:1;
+}
+.navi>li ul{
+	display:none;   /*서브메뉴 감추기->jQuery에서 보이게 함*/
+	
+	position:absolute;
+}
+.navi>li ul li{
+	float:left;
+	padding-top:7px;
+}
+.navi>li ul li a{
+	color:#fff;
+	font-size:17px;
+	font-weight:bold;
+	padding:7px 20px;
+}
+.navi>li ul li:hover a{
+	background:#b30000;
+	color:#fff;}
+
+/*서브메뉴 가로폭,나오는위치값-<부모영역을 벗어나서 위치를 잡기 위함*/
+.navi>li>ul{left:64px;width:421px;}-
+.title{
+	width:1300px;
+	height:850px;
+	margin:0 auto;
+	position:relative;
+}
+
+.title h1{
+	position:absolute;
+	top:350px;
+	left:770px;
+	font-size:50px;
+	color:#fff;
+}
+.title .txt{
+	position:absolute;
+	top:760px;
+	left:28%;
+	color:#fff;
+}
+.txt ul li{
+	float:left;
+	border-right:3px solid #000;
+	padding:0 15px;
+}
+
+.txt ul li:last-child{border:none;}
+
+.txt ul li h4{
+	font-size:30px;
+	text-align:center;
+	font-weight:bold;
+	padding-bottom:5px;
+}
+
+.txt ul li p{
+	font-size:23px;
+	text-align:center;
+	font-weight:400;
+}
+/*--------------------------------------컨텐츠--------------*/
+
+section{
+	width:100%;
+	background:#000;
+	color:#fff;
+}
+#con1{
+	width:100%;
+	height:950px;
+}
+.con1-in{
+	height:700px;
+	background:url(../image/en3.jpg) no-repeat center center;
+	background-size:cover;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-ms-background-size:cover;
+	-o-background-size:cover;
+}
+
+.box-in img{
+	width:170px;
+	height:170px;
+}
+.box1, .box2, .box3, .box4{
+	width:170px;
+	height:170px;
+	overflow:hidden;
+	margin-right:10px;
+}
+.box-in div{float:left;}
+
+.box1 ul{width:340px;}   /*176+176=352(총가로폭)*/
+.box1 ul li{float:left;}
+
+.box2 ul{width:340px;}   /*176+176=352(총가로폭)*/
+.box2 ul li{float:left;}
+
+.box3 ul{width:340px;}   /*176+176=352(총가로폭)*/
+.box3 ul li{float:left;}
+.sf-img{
+	width:1300px;
+	height:350px;
+	margin:0 auto;
+	position:relative;
+}
+.box-in{
+	position:absolute;
+	float:right;
+	right:0;
+	top:30px;
+
+}
+.sf-img h2{
+	font-size:40px;
+	font-weight:bold;
+	padding-top:10px;
+}
+
+.sf-img .sft{
+	font-size:20px;
+	color:#eaeaea;
+	padding-bottom:30px;
+}
+.sf-img .sftitle{
+	font-size:15px;
+/*	background:pink;*/
+	width:550px;
+
+}
+/*-------------------------------------awd------------------*/
+#con2{
+	width:100%;
+	height:950px;
+	/*background:pink;*/	
+}
+
+.con2-in{
+	height:700px;
+	background:url(../image/en2.jpg) no-repeat center center;
+	background-size:cover;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-ms-background-size:cover;
+	-o-background-size:cover;
+}
+.con2-tt{
+	width:1300px;
+	height:350px;
+	margin:0 auto;
+}
+
+.con2-tt h2{
+	font-size:40px;
+	font-weight:bold;
+	padding-top:10px;
+}
+
+.con2-tt .con2-1{
+	font-size:20px;
+	color:#eaeaea;
+	padding-bottom:30px;
+}
+.con2-tt .con2-2{
+	font-size:15px;
+
+}
+/*-----------------------------주행가능거리---------------------*/
+#con3{
+	width:100%;
+	height:950px;
+	/*background:pink;*/	
+}
+
+.con3-in{
+	height:700px;
+	background:url(../image/en4.jpg) no-repeat center center;
+	background-size:cover;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-ms-background-size:cover;
+	-o-background-size:cover;
+}
+.con3-tt{
+	width:1300px;
+	height:350px;
+	margin:0 auto;
+}
+
+.con3-tt h2{
+	font-size:40px;
+	font-weight:bold;
+	padding-top:10px;
+}
+
+.con3-tt .con3-1{
+	font-size:20px;
+	color:#eaeaea;
+	padding-bottom:30px;
+}
+.con3-tt .con3-2{
+	font-size:15px;
+
+}
+
+
+/*푸터*/
+footer{
+	width:100%;
+	height:200px;
+	background:#f2f2f2;
+}
+.footer-in{
+	width:1200px;
+	margin:0px auto;
+	text-align:center;
+}
+.footer1{ 
+	padding-top:30px;
+	
+}
+
+.footer1 ul{display:inline-block;}
+.footer1 ul li{
+	float:left;
+	padding-right:20px;
+}
+.footer1 ul li p{
+	cursor:pointer;
+	color:#737373;
+	font-size:13px;
+}
+.footer1 ul li a{
+	color:#737373;
+	font-size:13px;
+}
+.footer1 ul li:hover p{color:#000;}
+.footer1 ul li:hover a{color:#000;}
+
+.footer2{
+	color:#1a1a1a;
+	line-height:100px;
+	font-size:15px;
+	font-style:none;
+}
+
+address{
+	font-style:italic;
+	font-size:16px;
+	color:#1a1a1a;
+}
